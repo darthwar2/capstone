@@ -1,12 +1,19 @@
 * {
   margin: 0;
-  border: 1px solid black;
+
+}
+html {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 500;
 }
 nav {
   height: 64px;
   background-color: white;
   display: flex;
   align-items: center;
+  font-family: inherit;
+  background-color: #09497B;
+
 }
 .nav-container {
   display: flex;
@@ -17,34 +24,66 @@ nav {
 }
 .nav-links span a {
 text-decoration: none;
-color: black;
+color: white;
+font-size: .75rem;
+margin-left: 2rem;
 }
-
+.nav-links a:hover{
+  color: #E1F809;
+  border-bottom: 3px solid #E1F809;
+  padding-bottom: 3px;
+  transition: color 0.5s ease-out;
+  transition: border-bottom .3s linear;
+}
 .jumbotron-container {
   display: flex;
   justify-content: center;
-  background-color: grey;
 }
 .img-container {
   display: flex;
   justify-content: center;
+
 }
 .img-container img {
   width: 60%;
-  padding: 32px 24px;
+  margin: 2rem 1.5rem;
 }
 .jumbo-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.jumbo-content h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-eight: 500;
+}
+.jumbo-content p {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
 .btn {
-  padding: 8px;
-  background-color: grey;
+  padding: 2rem;
+  background-color: #09497B;
   text-align: center;
+  border: 1px solid black;
+  box-shadow: 10px 5px 1em black;
+}
+.btn:hover {
+  box-shadow: 1em 1em 1em #E1F809;
+  transition: box-shadow .5s ease-in-out;
 }
 .start {
   color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.start:hover {
+  color: #E1F809;
+  transition: color 1s ease-in, border-bottom .3s ease-in;
+  border-bottom: 3px solid #E1F809;
+
 }
 .abt-container {
   display: flex;
@@ -68,4 +107,51 @@ color: black;
 }
 .img-box{
   padding: 16px;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.align-container {
+
+}
+.title-holder {
+  display: flex;
+  justify-content: center;
+
+}
+.title {
+  margin: 32px 0px;
+}
+.courses-container {
+  display: flex;
+  padding: 0px 72px;
+  flex-wrap: wrap;
+}
+.course-box {
+  margin-right: 32px;
+}
+.course-box img {
+  height: auto;
+}
+.course-box p {
+  flex-wrap: wrap;
+}
+.course-box h1 {
+  margin: 8px 0px;
+}
+.pd {
+  padding-left: 16px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #0A9AFF;
+}
+.copy-container {
+  margin-left: 2rem;
+  margin-top: .9rem;
+}
+.footer-info{
+  margin-top: .9rem;
 }
