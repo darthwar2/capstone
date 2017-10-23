@@ -8,7 +8,7 @@
     <title>Colar Academy</title>
   </head>
   <body>
-      <!--header nav bar -->
+      <!--header nav bar --> <!--1:32PM -->
       <nav>
         <div class="nav-container">
           <img src="" />
@@ -29,9 +29,12 @@
             <div class="jumbo-content">
               <h1>Learn Something New Everyday</h1>
               <p>A language I don't understand</p>
-              <div class="btn">
-                <a href="#" class="start">Start Here</a>
-              </div>
+
+                <a href="#">
+                  <div class="btn">
+                  <p class="start">Start Here</p>
+                </div>
+                </a>
             </div>
         </div>
 
@@ -41,10 +44,14 @@
       <!--About section -->
       <div class="abt-container">
         <div class="container left">
-          <img src="./resources/images/information-main.jpg" />
-          <h1>It doesn't hurt to keep practicing</h1>
-          <p>"I cant believe this isnt butter"</p>
-          <p>Emanuel, Sr Strategist at hiring.com</p>
+          <div class="image-container">
+            <img src="./resources/images/information-main.jpg" />
+          </div>
+          <div class="about">
+            <h1>It doesn't hurt to keep practicing</h1>
+            <p>"I cant believe this isnt butter"</p>
+            <p class="author">Emanuel, Sr Strategist at hiring.com</p>
+          </div>
         </div>
         <div class="container right">
           <div class="box">
@@ -130,41 +137,42 @@
 
 
 <!-- Exhibit Video -->
-  <div class="main-container">
-    <div class="align-container">
+  <div class="container">
       <div class="title-holder">
         <h1>Thesis exhibit</h1>
       </div>
+      <div class="main-container">
+      <div class="abt-container">
       <div class="container left">
-        <video  />
+        <video width=100% height=auto controls>
+          <source src="./resources/videos/thesis.mp4" type="video/mp4">
+        </video>
         <h1>Reimagine urban</h1>
         <p>"Something to talk about"</p>
-
-        <div class="container right">
+      </div>
+      <div class="container right">
           <div class="box">
             <div class="img-box">
-              <img src="./resources/images/information-campus.jpg">
+              <img src="./resources/images/thesis-fisma.jpg">
             </div>
             <div class="details">
-              <h3>Our Campus</h3>
-              <p>Find which campus is close by you<p>
-              <a>Read more</a>
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product<p>
             </div>
           </div>
           <div class="box">
             <div class="img-box">
-              <img src="./resources/images/information-campus.jpg">
+              <img src="./resources/images/thesis-now-and-then.jpg">
             </div>
             <div class="details">
-              <h3>Our Campus</h3>
-              <p>Find which campus is close by you<p>
-              <a>Read more</a>
+              <h3>Now and then</h3>
+              <p>Research study about New York<p>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
+</div>
 <footer>
   <div class="copy-container">
     <span><p>&copy 2016 Colmar Academy. All Rights Reserved</p></span>
